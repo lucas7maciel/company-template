@@ -1,0 +1,17 @@
+{
+    "infos": {
+        "title": "CONTACT US",
+        "description": "We are a really cool company and we are testing to see if my CSS works.",
+        "phone": "(82) 9393-7878",
+        "email": "companyemail@gmail.com",
+        "address": "Jaraguá Street, Jaraguá 123"
+    },
+
+    "send_email": {
+        "title": "SEND AN EMAIL",
+        "email": "Email",
+        "topic": "Subject",
+        "type": "Type your message here",
+        "button": "SEND"
+    }
+}

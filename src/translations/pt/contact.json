@@ -1,0 +1,17 @@
+{
+    "infos" : {
+        "title" : "FALE CONOSCO",
+        "description" : "Nós somos uma empresa bem legal e estamos fazendo um teste para ver se meu CSS funciona.",
+        "phone" : "(82) 9393-7878",
+        "email" : "emaildaempresa@gmail.com",
+        "address" : "Rua do Jaraguá, Jaraguá 123"
+    },
+
+    "send_email" : {
+        "title" : "MANDE UM EMAIL",
+        "email" : "Email",
+        "topic" : "Assunto",
+        "type" : "Digite aqui a sua mensagem",
+        "button" : "ENVIAR"
+    }
+}

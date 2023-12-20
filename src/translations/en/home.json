@@ -1,0 +1,39 @@
+{
+    "section_1" : {
+        "info": "WEB, MOBILE, DESKTOP",
+        "title_1": "DIGITAL SOLUTIONS FOR",
+        "title_2" : "YOUR BUSINESS",
+        "button": "LEARN MORE"
+    },
+
+    "section_2": {
+        "comment_1" : "Excellent service! Quick response and very attentive staff.",
+        "comment_2" : "Responsive and beautiful websites, exactly as I requested!",
+        "comment_3" : "Well-structured and modern software. Will come back more often.",
+        "comment_4" : "I've never seen such a beautiful website in my life! The best site in Maceió!"
+    },
+
+    "section_3": {
+        "title": "WHY CHOOSE OUR COMPANY?",
+
+        "reason_1" : "OVER 30 YEARS IN THE INDUSTRY, LEADER IN MACEIÓ",
+        "reason_2" : "SUPPORT FOR ALL PLATFORMS",
+        "reason_3" : "USE OF ADVANCED TECHNOLOGIES",
+        "reason_4" : "OVER 20 INTERNATIONAL AWARDS"
+    },
+
+    "section_4": {
+        "address" : {
+            "title" : "ADDRESS",
+            "city" : "Maceió, Alagoas",
+            "street" : "Rua Bem Legal, 777",
+            "neighbourhood" : "Cool Neighborhood"
+        },
+        "contact" : {
+            "title" : "CONTACTS",
+            "mail" : "legalcompany@gmail.com",
+            "phone_1" : "(82) 93939-7804",
+            "phone_2" : "(82) 3352-2222"
+        }
+    }
+}

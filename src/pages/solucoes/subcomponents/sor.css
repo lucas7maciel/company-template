@@ -1,0 +1,39 @@
+
+.sor {
+  position: relative;
+
+  min-height: 80vh;
+
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  background-color: white;
+}
+
+.sor h1 {
+  padding-top: 3rem;
+
+  font-size: 3rem;
+}
+
+.sor h2 {
+  font-size: 1.9rem;
+}
+
+.sor .sections {
+  display: flex;
+  gap: 10%;
+}
+
+.sor .sections p {
+  font-size: 1.6rem;
+}
+
+.space-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 10%;
+}
+

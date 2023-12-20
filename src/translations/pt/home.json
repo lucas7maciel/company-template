@@ -1,0 +1,39 @@
+{
+    "section_1": {
+        "info": "WEB, MOBILE, DESKTOP",
+        "title_1": "SOLUÇÕES DIGITAIS PARA",
+        "title_2": "O SEU NEGÓCIO",
+        "button": "SAIBA MAIS"
+    },
+
+    "section_2": {
+        "comment_1": "Excelente serviço! Resposta rápida e equipe muito atenciosa.",
+        "comment_2": "Websites responsivos e bonitos, exatamente como eu pedi!",
+        "comment_3": "Software bem estruturado e moderno. Voltarei mais vezes.",
+        "comment_4": "Nunca vi um site tão bonito na minha vida! O melhor site em Maceió!"
+    },
+
+    "section_3": {
+        "title": "POR QUE ESCOLHER NOSSA EMPRESA?",
+
+        "reason_1": "MAIS DE 30 ANOS NA INDÚSTRIA, LÍDER EM MACEIÓ",
+        "reason_2": "SUPORTE PARA TODAS AS PLATAFORMAS",
+        "reason_3": "USO DE TECNOLOGIAS AVANÇADAS",
+        "reason_4": "MAIS DE 20 PRÊMIOS INTERNACIONAIS"
+    },
+
+    "section_4": {
+        "address": {
+            "title": "ENDEREÇO",
+            "city": "Maceió, Alagoas",
+            "street": "Rua Bem Legal, 777",
+            "neighbourhood": "Bairro Legal"
+        },
+        "contact": {
+            "title": "CONTATOS",
+            "mail": "empresalegal@gmail.com",
+            "phone_1": "(82) 93939-7804",
+            "phone_2": "(82) 3352-2222"
+        }
+    }
+}
