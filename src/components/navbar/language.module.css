@@ -1,0 +1,134 @@
+
+/*
+language
+acronyms
+current
+flags
+flag
+*/
+.container {
+    flex: 1 20%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 4%;
+  
+    padding: 0 2%;
+  
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+.acronyms {
+    height: 100%;
+    min-width: 4rem; 
+  
+    position: relative;
+  
+    overflow-y: hidden;
+  }
+  
+.acronyms span {
+    position: absolute;
+    left: 50%;
+  
+    transform: translate(-50%, -50%);
+  }
+  
+.current_acro {
+    top: 50%;
+    animation: change-curr 0.1s normal;
+  }
+  
+.other_acro {
+    top: 150%;
+    animation: change-oth 0.1s normal;
+  }
+  
+  @keyframes change-curr {
+    0% {
+      top: 150%;
+    }
+  
+    100% {
+      top: 50%;
+    }
+  }
+  
+  @keyframes change-oth {
+    0% {
+      top: 50%;
+    }
+  
+    100% {
+      top: 150%;
+    }
+  }
+  
+  
+.flags {
+    position: relative;
+  
+    height: 100%;
+    max-width: 50%;
+    aspect-ratio: 1.44;
+  
+    overflow-x: clip;
+  }
+  
+.flag  {
+    position: absolute;
+    top: 0;
+  
+    height: 100%;
+    width: 100%;
+  
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .current_flag {
+    left: 0;
+    animation: change-current 0.2s normal;
+  }
+  
+  .other_flag {
+    left: 100%;
+    animation: change-other 0.2s normal;
+  }
+  
+  @keyframes change-current {
+    0% {
+      left: 0;
+      transform: translateX(70%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes change-other {
+    0% {
+      left: 0;
+      transform: translateX(-30%);
+    }
+  
+    100% {
+      left: 0;
+      transform: translateX(-100%);
+    }
+  }
+  
+  @media (max-width: 1260px) {
+    .acronyms {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 791px) {
+    .container {
+      display: none;
+    }
+  }
