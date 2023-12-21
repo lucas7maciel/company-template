@@ -1,6 +1,6 @@
 
 import { useNavigate } from "react-router-dom"
-import "./navbar.css"
+//import "./navbar.css"
 import { MobileMenu } from "./mobile-menu"
 import { Language } from "./language"
 import { useTranslation } from "react-i18next"
@@ -8,8 +8,6 @@ import { useEffect } from "react"
 import styles from "./index.module.css"
 
 export const Navbar = (props) => {
-  console.log(styles)
-
   const { t, i18n : {changeLanguage}} = useTranslation()
   const navigate = useNavigate()
 
@@ -18,17 +16,17 @@ export const Navbar = (props) => {
   }, [props.portuguese])
 
   return (
-    <div className="navbar">
-      <div className="logo">
+    <div className={styles.container}>
+      <div className={styles.logo}>
         <img 
           src={require("../../assets/logos/logo.png")}
         />
-        <div className="name">
+        <div className={styles.name}>
           <span>EMPRESA</span>
         </div>
       </div>
 
-      <div className="sections">
+      <div className={styles.sections}>
         <span 
           className="selected"
           onClick={() => navigate("/")}

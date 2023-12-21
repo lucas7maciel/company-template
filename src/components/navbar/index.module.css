@@ -1,13 +1,29 @@
 
-.navbar {
+/*
+container -> container
+logo
+logo name
+sections
+
+language
+acronyms
+
+flag-container -> flags
+flagg -> flag
+
+menu-screen
+close
+links
+*/
+
+
+.container {
   display: flex;
 
   width: 100%;
   max-height: 8.5vh;
 
   padding-top: 3vh;
-
-  background: purple;
 }
 
 /*Logo*/
@@ -20,17 +36,14 @@
   padding: 0 2%;
 }
 
-
-.logo-text {
-  padding-left: 0.6rem;
-}
-
-.logo-text {
+.logo .name {
   overflow: hidden;
 }
 
-.logo-text-span {
+.logo span {
   display: inline-block;
+
+  padding-left: 0.6rem;
 
   font-size: 4.5vh;
   user-select: none;
@@ -38,51 +51,10 @@
   animation: logo 0.8s normal ease-out;
 }
 
-/*Language*/
-.flag {
-  flex: 1 20%;
-
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 4%;
-
-  font-size: 1.5em;
-  font-weight: bold;
-
-  padding: 0 2%;
-}
-
-.flag * {
-  cursor: pointer;
-}
-
-
-.flag-icon {
-  max-height: 60%;
-}
-
-/*Image*/
-.image {
+.logo img {
   max-height: 100%;
   max-width: 30%;
   object-fit: "cover";
-}
-
-@media (max-width: 1860px) {
-  .logo-text-span {
-    font-size: 3vh;
-  }
-}
-
-@media (max-width: 1260px) {
-  .logo-text-span {
-    display: none;
-  }
-
-  .flag-text {
-    display: none;
-  }
 }
 
 @keyframes logo {
@@ -105,21 +77,51 @@
   gap: 4%;
 }
 
-.sections-span {  
+.sections span {
   color: black;
   font-size: 2.7vh;
-  /*font-family: Arial, Helvetica, sans-serif;*/
 }
 
-.sections-span:hover {
+.sections span:hover {
   color: red;
   cursor: pointer;
 
   transition: color 0.8s;
 }
 
-@media (max-width: 791px) {
-  .sections {
+/*Mobile Menu*/
+.mobile-menu {
+  display: none;
+
+  flex: 1 20%;
+
+  padding: 0 2%;
+}
+
+@media (max-width: 1860px) {
+  .logo .name span {
+    font-size: 3vh;
+  }
+}
+
+@media (max-width: 1260px) {
+  .logo .name {
     display: none;
+  }
+
+  .language .acronyms {
+    display: none;
+  }
+}
+
+@media (max-width: 791px) {
+  .sections, .language {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
   }
 }

@@ -1,10 +1,12 @@
 
 import { useState } from "react"
-import "./language.css"
+//import "./language.css"
 import brazil from "../../assets/language/brazil-icon.svg"
 import usa from "../../assets/language/usa-icon.svg"
+import styles from "./language.module.css"
 
 export const Language = (props) => {
+  console.log(styles)
   const [hovered, sethovered] = useState(false)
 
   const changeLanguage = () => {
@@ -23,37 +25,41 @@ export const Language = (props) => {
     transition: "transform 0.1s ease-in"
   } : {}
 
+  const brStyle = props.portuguese ? 
+    styles.current_flag : styles.other_flag
+
+  const usaStyle = !props.portuguese ? 
+    styles.current_flag : styles.other_flag
+
   return (
   <div 
-    className="language"
+    className={styles.container}
     onClick={changeLanguage}
     onMouseEnter={() => sethovered(true)}
     onMouseLeave={() => sethovered(false)}
   >
-    <div className="acronyms">
+    <div className={styles.acronyms}>
       <span 
-        className={`${props.portuguese ? "current" : "other"}`}
+        className={props.portuguese ? styles.current_acro : styles.other_acro}
         style={acronymHover}
         >PT
       </span>
       <span 
-        className={`${!props.portuguese ? "current" : "other"}`}
+        className={!props.portuguese ? styles.current_acro : styles.other_acro}
         style={acronymHover}
         >EN
       </span>
     </div>
 
-    <div 
-      className="flag-container"
-    >
+    <div className={styles.flags}>
       <img
         src={usa}
-        className={`flagg ${!props.portuguese ? "current" : "other"}`}
+        className={`${styles.flag} ${usaStyle}`}
         style={flagHover}
       />
       <img
         src={brazil}
-        className={`flagg ${props.portuguese ? "current" : "other"}`} 
+        className={`${styles.flag} ${brStyle}`}
         style={flagHover}
       />
     </div>

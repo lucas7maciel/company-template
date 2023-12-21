@@ -1,5 +1,6 @@
 
-import "./index.css"
+//import "./index.css"
+import styles from "./index.module.css"
 import { Meio } from "./subcomponents/meio"
 import phone from "../../assets/icons/phone-icon.svg"
 import mail from "../../assets/icons/mail-icon.svg"
@@ -16,13 +17,13 @@ export const Contato = () => {
   ]
 
   return (
-    <div className="contatos">
+    <div className={styles.container}>
 
-    <div className="infos">
-      <h2 className="title">{t("contact.infos.title")}</h2>
-      <p className="intro">{t("contact.infos.description")}</p>
+    <div className={styles.infos}>
+      <h2>{t("contact.infos.title")}</h2>
+      <p>{t("contact.infos.description")}</p>
 
-      <div className="contato">
+      <div className={styles.contatos}>
         {meios.map((meio, index) => (
           <Meio 
             key={index}
@@ -34,11 +35,11 @@ export const Contato = () => {
       </div>
     </div>
 
-    <div className="message">
+    <div className={styles.message}>
 
-      <div className="email">
+      <div className={styles.email}>
         <p>{t("contact.send_email.title")}</p>
-        <div className="inputs">
+        <div className={styles.inputs}>
           <input 
             placeholder={t("contact.send_email.email")}
           /><br />
@@ -53,13 +54,13 @@ export const Contato = () => {
         </div>
       </div>
 
-      <div className="under-section">
-      <div className='social-media'>
-        <img src={require('../../assets/social-media/linkedin-icon.png')} />
-        <img src={require('../../assets/social-media/whatsapp-icon.png')} />
-        <img src={require('../../assets/social-media/facebook-icon.png')} />
-        <img src={require('../../assets/social-media/instagram-icon.png')} />
-      </div>
+      <div className={styles.under_section}>
+        <div className={styles.social_media}>
+          <img src={require('../../assets/social-media/linkedin-icon.png')} />
+          <img src={require('../../assets/social-media/whatsapp-icon.png')} />
+          <img src={require('../../assets/social-media/facebook-icon.png')} />
+          <img src={require('../../assets/social-media/instagram-icon.png')} />
+        </div>
       </div>
     </div>
     </div>
