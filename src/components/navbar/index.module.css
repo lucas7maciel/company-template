@@ -1,22 +1,3 @@
-
-/*
-container -> container
-logo
-logo name
-sections
-
-language
-acronyms
-
-flag-container -> flags
-flagg -> flag
-
-menu-screen
-close
-links
-*/
-
-
 .container {
   display: flex;
 
@@ -60,7 +41,8 @@ links
 @keyframes logo {
   0% {
     transform: translateX(-105%);
-  } 100% {
+  }
+  100% {
     transform: translateX(0%);
   }
 }
@@ -115,7 +97,8 @@ links
 }
 
 @media (max-width: 791px) {
-  .sections, .language {
+  .sections,
+  .language {
     display: none;
   }
 
