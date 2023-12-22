@@ -10,7 +10,7 @@ export const Section4 = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <img src={require("../../../assets/logos/logo.png")} />
+        <img src={require("../../../assets/logos/logo.png")} alt="Logo" />
         <p>EMPRESA</p>
       </div>
 
