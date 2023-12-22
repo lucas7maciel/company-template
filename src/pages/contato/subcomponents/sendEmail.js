@@ -9,7 +9,7 @@ export const SendEmail = (props) => (
       <input placeholder={props.t("contact.send_email.topic")} />
       <br />
       <textarea
-        placeholder={props.t("contact.send_email.title")}
+        placeholder={props.t("contact.send_email.type")}
         rows={5}
         cols={25}
       />

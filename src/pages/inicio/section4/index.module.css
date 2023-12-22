@@ -52,6 +52,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10%;
+
+  padding-top: 1.5rem;
 }
 
 /*Address and Contact*/

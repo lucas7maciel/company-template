@@ -11,7 +11,7 @@ export const Section4 = () => {
     <div className={styles.container}>
       <div className={styles.logo}>
         <img src={require("../../../assets/logos/logo.png")} alt="Logo" />
-        <p>EMPRESA</p>
+        <p>LUCAS</p>
       </div>
 
       <div className={styles.sections}>

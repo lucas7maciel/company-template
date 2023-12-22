@@ -10,16 +10,13 @@ export const MenuSreen = (props) => {
 
   return (
     <div className={styles.menu_screen} onClick={() => props.setVisible(false)}>
-      <div className={styles.close}>
-        <span>X</span>
-      </div>
-
       <div className={styles.links}>
         <span onClick={() => navigate("/")}>INÍCIO</span>
         <span onClick={() => navigate("/solucoes")}>SOLUÇÕES</span>
         <span onClick={() => navigate("/contato")}>CONTATO</span>
       </div>
 
+      <p className={styles.close}>Tap Anywhere to Close</p>
       <div className={styles.flags}>
         <img src={brazil} onClick={() => props.setPortuguese(true)} />
         <img src={usa} onClick={() => props.setPortuguese(false)} />

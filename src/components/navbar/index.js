@@ -4,7 +4,7 @@ import { Language } from "./language";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import styles from "./index.module.css";
-import logo from "../../assets/logos/logo.png"
+import logo from "../../assets/logos/logo.png";
 
 export const Navbar = (props) => {
   const {
@@ -20,9 +20,9 @@ export const Navbar = (props) => {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <img src={logo} />
+        <img src={logo} alt="Logo" onClick={() => navigate("/")} />
         <div className={styles.name}>
-          <span>EMPRESA</span>
+          <span>Lucas</span>
         </div>
       </div>
 
@@ -40,9 +40,7 @@ export const Navbar = (props) => {
         portuguese={props.portuguese}
         setPortuguese={props.setPortuguese}
       />
-      <MobileMenu 
-        setPortuguese={props.setPortuguese}
-      />
+      <MobileMenu setPortuguese={props.setPortuguese} />
     </div>
   );
 };

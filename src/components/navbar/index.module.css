@@ -27,6 +27,7 @@
   padding-left: 0.6rem;
 
   font-size: 4.5vh;
+  font-weight: bold;
   user-select: none;
 
   animation: logo 0.8s normal ease-out;
@@ -36,6 +37,8 @@
   max-height: 100%;
   max-width: 30%;
   object-fit: "cover";
+
+  cursor: pointer;
 }
 
 @keyframes logo {
