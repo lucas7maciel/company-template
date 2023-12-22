@@ -1,17 +1,4 @@
-/*container -> container
-  infos title -> infos h2
-  infos intro -> infos p
-  meio cont-text -> meio p
-  contatos -> container
 
-  message
-  email
-  inputs
-  
-  under_section
-  social_media
-*/
-  
   .container {
     overflow-x: clip;
   

@@ -1,12 +1,12 @@
-import { Section1 } from "./subcomponents/section1"
-import { Section2 } from "./subcomponents/section2"
-import { Section3 } from "./subcomponents/section3"
-import { Section4 } from "./subcomponents/section4"
-import { useRef } from "react"
-import "./index.css"
+import { Section1 } from "./section1/index";
+import { Section2 } from "./section2/index";
+import { Section3 } from "./section3/index";
+import { Section4 } from "./section4/index";
+import { useRef } from "react";
+import "./index.css";
 
 export const Inicio = () => {
-  const sec2Ref = useRef()
+  const sec2Ref = useRef();
 
   return (
     <div className="page">
@@ -15,5 +15,5 @@ export const Inicio = () => {
       <Section3 />
       <Section4 />
     </div>
-  )
-}
+  );
+};

@@ -1,9 +1,17 @@
 import { useTranslation } from "react-i18next";
-import styles from "./section1.module.css";
+import styles from "./index.module.css";
 import computer from "../../../assets/computer.svg";
 
 export const Section1 = (props) => {
   const { t } = useTranslation();
+
+  function roll() {
+    props.sec2.current?.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "center",
+    });
+  }
 
   return (
     <div className={styles.container}>
@@ -22,17 +30,7 @@ export const Section1 = (props) => {
             </span>
           </h1>
         </div>
-        <button
-          onClick={() =>
-            props.sec2.current?.scrollIntoView({
-              behavior: "smooth",
-              inline: "center",
-              block: "center",
-            })
-          }
-        >
-          {t("home.section_1.button")}
-        </button>
+        <button onClick={roll}>{t("home.section_1.button")}</button>
       </div>
       <div className={styles.icons}>
         <img src={computer} />

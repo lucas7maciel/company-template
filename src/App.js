@@ -6,11 +6,9 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { Contato } from "./pages/contato/index";
 import { Solucoes } from "./pages/solucoes/index";
 import { Inicio } from "./pages/inicio/index";
-import {getLanguage} from "./translations/getLanguage"
 
 export default function App() {
   const [portuguese, setPortuguese] = useState(false)
-  getLanguage("en")
 
   useEffect(() => {
     document.title = "Lucas Systems"
