@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react"
-import "./section2.css"
 import { useTranslation } from "react-i18next"
+import styles from "./section2.module.css"
 
 export const Section2 = (props) => {
   const [curr, setCurr] = useState(1)
@@ -38,12 +38,12 @@ export const Section2 = (props) => {
   }, [])
 
   return (
-  <div className='section-2'>
-    <div className='container' ref={props.reference}>
-      <div className='icon'>
+  <div className={styles.container}>
+    <div className={styles.box} ref={props.reference}>
+      <div className={styles.icon}>
         {imgs.map((img, index) => (
           <img 
-            className={curr == index ? "selected" : last == index ? "last" : ""}
+            className={curr == index ? styles.selected : last == index ? styles.last : ""}
             key={index}
             src={img}
           />
@@ -53,13 +53,13 @@ export const Section2 = (props) => {
         />
       </div>
       
-      <div className="quote">
-        <span className="txt first-qtmark">“	</span>
-          <i className="txt">{comments[curr].text}</i>
-        <span className="txt last-qtmark"> ”</span>
+      <div className={styles.quote}>
+        <span>“	</span>
+          <i>{comments[curr].text}</i>
+        <span className={styles.last_qtmark}> ”</span>
       </div>
       
-      <div className="person">
+      <div className={styles.person}>
         <i>{comments[curr].person}</i>
       </div>
       

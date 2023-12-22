@@ -1,12 +1,10 @@
 
 import { useState } from "react"
-//import "./language.css"
 import brazil from "../../assets/language/brazil-icon.svg"
 import usa from "../../assets/language/usa-icon.svg"
 import styles from "./language.module.css"
 
 export const Language = (props) => {
-  console.log(styles)
   const [hovered, sethovered] = useState(false)
 
   const changeLanguage = () => {
