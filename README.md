@@ -1,4 +1,4 @@
-<p float="left">
+<p float="center">
   <img src="https://raw.githubusercontent.com/lucas7maciel/company-template/master/screenshots/home.jpeg" height="150" />
   <img src="https://raw.githubusercontent.com/lucas7maciel/company-template/master/screenshots/contact.jpeg" height="150" /> 
   <img src="https://raw.githubusercontent.com/lucas7maciel/company-template/master/screenshots/mobile-menu.jpeg" height="150" />
