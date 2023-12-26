@@ -8,18 +8,19 @@ export const Section2 = (props) => {
   const [last, setLast] = useState(0);
 
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       setCurr((val) => {
-        console.log(`Val: ${val}`)
         setLast(val);
 
-        if (val + 1 == 4) { //4 = comments list length
+        if (val + 1 === 4) { //4 = comments list length
           return 0;
         }
 
         return val + 1;
       });
     }, 2000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (

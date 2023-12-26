@@ -1,5 +1,26 @@
+import { useTranslation } from "react-i18next"
 
-import { useRef } from "react"
+export const Solucoes = () => {
+  const {t} = useTranslation()
+  const container = {
+    height: "80vh",
+
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+
+    textAlign: "center"
+  }
+
+  return (
+    <div style={container}>
+      <h2>{t("solutions.main")}</h2>
+      <h3>:)</h3>
+    </div>
+  )
+}
+
+/*import { useRef } from "react"
 import { Sor } from "./subcomponents/sor"
 import { Fs } from "./subcomponents/fs"
 import { Gft } from "./subcomponents/gft"
@@ -91,3 +112,4 @@ export const Solucoes = () => {
 //Gestão de Relacionamento Financeiro
 //Força de Vendas
 //Fast Solution
+*/
