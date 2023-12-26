@@ -9,5 +9,5 @@ i18next
 .use(initReactI18next)
 .init({
   resources: { en, pt },
-  lng: "pt"
+  lng: "en"
 })
