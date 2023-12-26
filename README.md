@@ -7,3 +7,8 @@ Responsiveness, language switching, use of animations in different layouts, colo
   <img src="https://raw.githubusercontent.com/lucas7maciel/company-template/master/screenshots/contact.jpeg" height="100" /> 
   <img src="https://raw.githubusercontent.com/lucas7maciel/company-template/master/screenshots/mobile-menu.jpeg" height="100" />
 </p>
+
+*Website hosted on https://site-vaga.vercel.app/*
+
+### HOW TO RUN
+
