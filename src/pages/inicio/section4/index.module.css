@@ -5,7 +5,7 @@
 }
 
 .container div {
-  flex: 1;
+  /*flex: 1;*/
 
   max-height: 200px;
   padding-bottom: 0;
@@ -51,9 +51,14 @@
 .sections {
   display: flex;
   flex-wrap: wrap;
+
   gap: 10%;
 
   padding-top: 1.5rem;
+}
+
+.sections div {
+  flex: 1;
 }
 
 /*Address and Contact*/
@@ -86,61 +91,50 @@
   cursor: pointer;
 }
 
+/*
+Turn into 2x1 flex
 @media (max-width: 790px) {
+  .container div {
+    max-height: none;
+  }
+
+  .address, .contact {
+    flex: 1 0 45%;
+  }
+
+  .social_media {
+    flex: 1 0 90%;
+  }
+}*/
+
+@media (max-width: 790px) {
+  .container div {
+    max-height: none;
+  }
+
   .logo {
     max-height: 1.5rem;
   }
 
   .sections {
-    gap: 0;
+    flex-direction: column;
+    gap: 0.2rem;
   }
 
-  .social_media img {
-    padding-top: 0.6rem;
-    max-width: 3rem;
-  }
-}
-
-@media (max-width: 716px) {
-  .container div {
-    max-height: none;
-  }
-
-  .social_media img {
-    max-width: 2rem;
-
-    padding: 0.5rem 0;
-  }
-
-  .logo p {
-    font-size: 2.6rem;
-  }
-
-  .address,
-  .contact {
-    flex: 1 1 45%;
+  .sections div > p {
+    font-size: 1.1rem;
   }
 
   .social_media {
-    flex: 1 1 90%;
-
     align-items: center;
 
     max-height: 3.5rem;
   }
 
   .social_media img {
-    max-width: 20%;
+    padding-top: 0.6rem;
+      
+    max-width: 3rem;
     max-height: 50%;
-  }
-
-  .address p,
-  .contact > p {
-    font-size: 0.8rem;
-  }
-
-  .address h2,
-  .contact h2 {
-    font-size: 1.3rem;
   }
 }

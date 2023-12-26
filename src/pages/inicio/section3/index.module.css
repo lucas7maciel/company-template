@@ -89,10 +89,10 @@
 @media (max-width: 788px) {
   .cards {
     flex-direction: column;
-    width: 60%;
   }
 
   .cards .card {
     flex: 1;
+    margin: 3.5vh 0vh;
   }
 }

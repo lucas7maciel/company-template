@@ -35,15 +35,16 @@
   border: solid white;
   border-radius: 10px;
 
-  padding-top: 6vw;
-  padding-bottom: 1rem;
+  padding: 6vw 0 1rem 0;
 }
 
 .quote {
   display: flex;
   gap: 0.5rem;
 
-  width: 80%;
+  width: 90%;
+
+  padding: 0rem 1rem;
 
   text-align: center;
   font-size: 2rem;
@@ -150,7 +151,20 @@
 
 @media (max-width: 920px) {
   .box {
-    max-width: 80%;
+    max-width: 90%;
+  }
+
+  .quote {
+    font-size: 1.6rem;
+  }
+
+  .quote span {
+    font-size: 3.1rem;
+  }
+
+  .person {
+    margin-top: 1rem;
+    font-size: 0.8rem;
   }
 }
 

@@ -31,7 +31,7 @@
 
 .infos p {
   color: #040406;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 
   animation: show-big-texts 1.8s ease-out backwards;
 }
@@ -62,7 +62,7 @@
 }
 
 .meio p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
   color: gray;
   animation: show-contact-meio 1.6s ease-out backwards;
@@ -267,7 +267,7 @@
   }
 
   .infos p {
-    max-width: 70%;
+    /*max-width: 70%;*/
 
     margin: auto;
     margin-top: 2rem;

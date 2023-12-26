@@ -10,6 +10,7 @@ export const Section2 = (props) => {
   useEffect(() => {
     setInterval(() => {
       setCurr((val) => {
+        console.log(`Val: ${val}`)
         setLast(val);
 
         if (val + 1 == 4) { //4 = comments list length
@@ -18,7 +19,7 @@ export const Section2 = (props) => {
 
         return val + 1;
       });
-    }, 5000);
+    }, 2000);
   }, []);
 
   return (
