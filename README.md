@@ -8,10 +8,10 @@ Responsiveness, language switching, use of animations in different layouts, colo
 </p>
 
 
-### YOU'LL NEED
+## YOU'LL NEED
 - Node.js
 
-### HOW TO RUN
+## HOW TO RUN
 First, clone or extract the repository.
 ```
 git clone https://github.com/lucas7maciel/company-template.git
