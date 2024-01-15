@@ -27,6 +27,7 @@ export const Contato = () => {
           {meios.map((meio, index) => (
             <Meio
               key={index}
+              title={t("contact.infos.copy")}
               order={index}
               icon={meio.icon}
               value={meio.value}
